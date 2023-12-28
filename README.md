@@ -1,0 +1,1 @@
+Proyecto personal de una liga de futbol , mi objetivo sera poder crear un programa , con backend usando nodejs y express , y con frontend , usando Reactjs. Este proyecto es para implementacion en una liga de futbol de barrio.
