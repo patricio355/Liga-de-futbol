@@ -1,0 +1,31 @@
+.paco{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.cardCancha{
+    width: 45%;
+    height: inherit;
+    border-radius: 30px;
+    border: solid 1px gray;
+    display: flex;
+    flex-direction: row;
+    background-color: rgba(0, 0, 0, 0.795);
+    margin: 10px;
+}
+
+.imagenCancha{
+    width: 50%;
+    
+}
+
+.imagenCancha img{
+    width: 100%;
+    height: auto;
+    border-radius: 30px;
+}
+
+.descripcionCancha p{
+    color: blanchedalmond;
+}

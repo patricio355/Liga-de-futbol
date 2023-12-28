@@ -1,0 +1,11 @@
+.navas{
+    background-color:#0a314e;
+    align-self: center;
+    justify-self: center;
+    align-items: center;
+}
+.navas h1{
+    color: azure;
+    border-color: black;
+    
+}

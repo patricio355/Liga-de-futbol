@@ -1,0 +1,25 @@
+.bodyes {
+    font-family: Arial, sans-serif;
+    text-align: center;
+  }
+  .containeres {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px auto;
+    max-width: 1000px;
+    background-color: #061724;
+  }
+  .round {
+    width: 45%; /* Ancho del contenedor de cada ronda */
+    border: 1px solid #ccc;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+  }
+  .final {
+    width: 10%; /* Ancho del contenedor de la final */
+    border: 1px solid #000;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+  }

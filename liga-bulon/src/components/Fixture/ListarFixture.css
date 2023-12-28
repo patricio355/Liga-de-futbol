@@ -1,0 +1,51 @@
+.aca {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    
+  }
+  .container {
+    display: flex;
+  
+    align-items: center;
+    padding: 10px;
+    background-color: #061724; /* Fondo blanco */
+    
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  .team {
+    background-color: #ffffff;; /* Fondo blanco para los equipos */
+    width: 214px;
+    height: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+  }
+
+  .team h4{
+    margin: 3px;
+    color: #000;
+   
+  }
+  .result {
+    background-color: #000;
+    color: #fff;
+    padding: 3px 30px;
+    display: flex;
+    flex-direction: column;
+    font-size: 17px;
+    height: 37px;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .result h4{
+    margin: 0px;
+  }
+  .result h6{
+    margin: 0px;
+  }
+  a{
+    color: #fff;
+  }
