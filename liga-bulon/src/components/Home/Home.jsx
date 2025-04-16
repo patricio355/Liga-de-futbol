@@ -10,7 +10,6 @@ function Home() {
         <h1>BIENVENIDO A LA PAGINA OFICIAL DE LA LIGA DE FUTBOL BULON</h1>
         <img src={fotoLogo} alt="" />
 
-        //se
         <h3>Noticias Recientes</h3>
         <img src={fotoLogo} alt="" />
         <h5>Americas gano la liga 2023</h5>

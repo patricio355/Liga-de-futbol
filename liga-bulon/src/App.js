@@ -8,7 +8,17 @@ import MiEquipo from './components/Equipos/Miequipo';
 import Octogonales from './components/Octogonales/Octogonales';
 import ListarCanchas from './components/Canchas/ListarCanchas';
 import ListarTablas from './components/Tablas/ListarTablas';
+
 function App() {
+
+  const usserLoggedID = {
+    nombre : 'Patricio',
+    equipoid : '2',
+  };
+
+  const equipo = usserLoggedID.equipoid;
+  
+//hola
 
   return (
    <div>
@@ -18,7 +28,7 @@ function App() {
       <Route path='/' element = {<Home/>}/>
       <Route path='/equipos' element = {<ListarEquipos/>}/>
       <Route path='/fixture' element = {<ListarFixture/>}/>
-      <Route path='/mi-equipo' element = {<MiEquipo/>}/>
+      <Route path='/mi-equipo' element = {<MiEquipo id={equipo}/>}/>
       <Route path='/jugadores' element = {<ListarJugadores/>}/>
       <Route path='/octogonales' element = {<Octogonales/>}/>
       <Route path='/canchas' element = {<ListarCanchas/>}/>

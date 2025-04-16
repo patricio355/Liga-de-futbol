@@ -50,7 +50,7 @@ export default function CustomizedTables() {
     try {
       const data = await fetch(url);
       const response = await data.json();
-      setJugadores(response.jugadores.map(jugador => jugador));
+      setJugadores(response?.jugadores.map(jugador => jugador));
     
     } catch (error) {
       console.error(error);

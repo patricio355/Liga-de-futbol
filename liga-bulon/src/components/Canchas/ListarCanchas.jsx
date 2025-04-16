@@ -1,10 +1,8 @@
 import React from 'react';
 import './ListarCanchas.css';
 import { useEffect, useState } from 'react';
+import CrearCancha from './CrearCancha';
 function ListarCanchas() {
-  const [sad, setSad] = useState("hola");
-
-
 
   const [canchas, setCanchas] = useState([]);
 
@@ -27,15 +25,7 @@ function ListarCanchas() {
 
 
 
-  const handleInputChange = (event) => {
-    setSad(event.target.value);
-  };
 
-  const handleSubmit = (event) => {
-    event.preventDefault();
-    // Aquí podrías hacer algo con el valor de 'sad' al enviar el formulario
-    console.log("Valor de sad:", sad);
-  };
 
 
 
@@ -58,25 +48,8 @@ function ListarCanchas() {
           </div>
         </div>
       ))}
-
-
-<form onSubmit={handleSubmit}>
-      <p>{sad}</p>
-      <label htmlFor="sad">Cambiar</label>
-      <input
-        type="text"
-        id="sad"
-        name="sad"
-        value={sad}
-        onChange={handleInputChange}
-      />
-      <button type='submit'>Guardar</button>
-    </form>
-    </div>
-
-
-
-
+        <CrearCancha></CrearCancha>
+</div>
 
 
   );
