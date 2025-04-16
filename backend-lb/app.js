@@ -7,6 +7,7 @@ const equiposRoutes = require("./routes/equiposRoutes")
 const jugadoresRoutes = require("./routes/jugadoresRoutes")
 const canchasRoutes = require("./routes/canchasRoutes")
 const partidosRoutes = require("./routes/partidosRoutes")
+app.use(express.json());
 // asegurate de que el cors este siempre antes de las rutas
 app.use(cors({ origin: 'http://localhost:3000' }));
 //aqui deben estar todas las rutas para mandar a el enrutador principal (equiposRoutes)

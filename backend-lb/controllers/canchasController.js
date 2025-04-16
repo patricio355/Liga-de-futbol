@@ -10,7 +10,7 @@ module.exports={
 			
 		});
         //esto es para mandar algun otro dato de utilidad en el json
-        //aqui esta mandando la cantidad de equipos en count
+        //aqui esta mandando la cantida d de equipos en count
 		const count = data.length;
 
         // el res es para mandar el json como respuesta
@@ -52,8 +52,34 @@ module.exports={
            
         } 
 
-    }
+    },
+     // Crear una nueva cancha
+     createCancha: async (req, res) => {
+        try {
+        
+            console.log("entro holaaaaa")
+            
+            // Obtener los datos de la nueva cancha desde la solicitud
+            
+            
+            // Crear la nueva cancha en la base de datos
+            const nuevaCancha = await db.Canchas.create({
+                
+                nombre: req.body.nombre,
+    lugar: req.body.lugar,
+    detalle: req.body.detalle,
+    ubicacion: req.body.ubicacion
+                // Agrega otros campos según la estructura de tu modelo Canchas
+            });
 
+            // Devolver la nueva cancha creada como respuesta
+            // res.status(201).json({ data: nuevaCancha });
+        } catch (error) {
+            console.log("nooooooooooooooooooooo")
+            console.error(error);
+            res.status(500).json({ error: 'Error al crear la cancha.' });
+        }
+    },
 
 
 }
